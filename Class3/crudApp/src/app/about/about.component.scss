@@ -107,3 +107,36 @@
     background-color: #007bff;
     color: #fff;
   }
+
+  ul {
+    align-content: center;
+    list-style-type: none;
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  ul li::before {
+    content: "\2022"; /* Bullet character (•) */
+    color: #333;
+    font-size: 16px;
+    align-content: center;
+    margin-right: 10px;
+    text-align: center;
+  }
+
+  ul li {
+    display: flex;
+    margin-bottom: 20px;
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  ul li span {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  ul li p {
+    margin: 0;
+  }
