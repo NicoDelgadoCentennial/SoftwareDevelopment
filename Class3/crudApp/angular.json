@@ -18,7 +18,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/crud-app",
-            "index": "src/index.html",
+            "index": "src/views/index.ejs",
             "main": "src/main.ts",
             "polyfills": [
               "zone.js"
