@@ -63,6 +63,21 @@ exports.findOne = (req, res) =>{
     })
 }
 exports.update = (req,res) =>{
+    if (!req.body.name){
+        return res.status(400).send({
+            message:"name can not be empty"
+        })
+    }
+    if (!req.body.age){
+        return res.status(400).send({
+            message:"age can not be empty"
+        })
+    }
+    if (!req.body.major){
+        return res.status(400).send({
+            message:"major can not be empty"
+        })
+    }
     const id =req.params.id;
 
     Student.findByIdAndUpdate(id, {
